@@ -1,0 +1,187 @@
+
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+html , body{
+    font-family: "Montserrat", serif;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body{
+    background-image: url('https://res.cloudinary.com/dnagrjvtq/image/upload/v1736143862/bg-yello_dy9gn6.png');
+    background-color: #14161a;
+    background-repeat: no-repeat;
+}
+.sticky_bottom_button {
+    position: sticky;
+    bottom: 0;
+    z-index: 99999;
+    display: none;
+  }
+.bg-primary{
+    background-color: #dddb14;
+}
+.bg-button{
+    background:linear-gradient(45deg, #eeec26, #c9990e);
+    color: #000 !important;
+    font-weight: 700;
+    transition: 0.2s ease-in-out;
+}
+.bg-button:hover {
+    transform: scale(1.1);
+}
+.bg-secondary{
+    background-color: #292e38;
+}
+.text-primary, .nav-active{
+    // color: #cca01f;
+    color: #e4b528 !important;
+}
+.text-secondary{
+    color:#fff;
+}
+.text-text{
+    color: #A0A7AB;
+}
+.section-title .title .before , .section-title .title .after {
+    background: #2f3541;
+    height: 3px;
+}
+.section-title .title {
+    display: grid;
+    grid-template-columns: 10% 36% auto;
+    width: 100%;
+    align-items: center;
+    column-gap: 20px ;
+}
+.section-title{
+    width: 100%;
+}
+
+.secondary-btn{
+        background-color: #2f3541;
+        border-color: #16181e;
+        border-style: solid;
+        color: white;
+}
+.primary-btn{
+    background-color: #e6cd1e;
+    border-color: #cea311;
+    border-style: solid;
+    color: #000000;
+}
+.primary-btn:hover{
+    background-color: #2f3541;
+    color: white;
+}
+.secondary-btn:hover{
+    background:linear-gradient(45deg, #eeec26, #c9990e);
+    color: black;
+}
+.gs_main_header{
+    background-color: rgba(0,0,0,.6);
+}
+#navbar-default li span{
+    cursor: pointer;
+}
+.gs_top_header{
+    .top_icon i{
+        width: 25px;
+        height: 25px;
+        padding: 5px;
+        border-radius: 50px;
+        background-color: rgba(255,255,255,.75);
+        color: #181c23;
+        margin-right: 5px;
+
+    }
+    .right_side i{
+        margin-right: 20px;
+        color: white;
+        font-size: 14px;
+    }
+}
+.link{
+    cursor: pointer;
+}
+footer{
+    background: linear-gradient(45deg, #0000007a, #181c23cc), url(https://res.cloudinary.com/dnagrjvtq/image/upload/v1735282830/bg-bottom_opkuum.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+
+    [type=text] , [type=email] , textarea{
+        padding: 6.5px 10px;
+        font-size: 1em;
+        font-weight: 400;
+        color: #fff;
+        background-color: transparent;
+        border: 1px solid #313947;
+        border-radius: 4px;
+        transition: .15s border-color;
+        width: 100%;    
+    }
+
+    ::placeholder{
+        color: #A0A7AB;
+        font-weight: 500;
+        font-size: 14px;
+    }
+    a:hover{
+        color: #e4b528;
+    }
+}
+
+.footer-bottom{
+
+    .bottom_icon a {
+        background: #ffffff;
+        color: #000;
+        width: 30px;
+        transition: 0.2s ease;
+        display: inline-flex;
+        height: 30px;
+        justify-content: center;
+        align-items: center;
+        margin-right: 9px;
+        border-radius: 50px;
+        font-size: 18px;
+    }
+    .bottom_icon a:hover {
+        background: #e4b528;
+        color: white;
+    }
+}
+.animate-slide-up{
+    transition: .3s ease-in-out;
+
+}
+.animate-slide-up:hover{
+    transform: translateY(-15px);
+}
+.button-animation{
+    transition: .2s ease-in-out;
+}
+.button-animation:hover{
+    background-color: white;
+}
+
+.gs_faq button {
+    text-align: left;
+  }
+@media screen and (max-width:768px) {
+    .sticky_bottom_button {
+        display: block;
+    }
+    .section-title .title {
+        row-gap: 10px;
+        grid-template-columns: 100%;
+    }
+    p{
+            font-size: 0.9rem;
+    }
+}

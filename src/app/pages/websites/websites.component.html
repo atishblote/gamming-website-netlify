@@ -1,0 +1,220 @@
+<section class="gs_websites">
+    <div class="max-w-screen-xl  mx-auto p-4">
+        <app-hero-section [title]="title"></app-hero-section>
+
+
+        <div class="gs_list_websites py-5">
+
+            <div id="accordion-flush" data-accordion="collapse" data-active-classes="bg-white dark:bg-gray-900 text-gray-900 dark:text-white"
+                data-inactive-classes="text-blue-500 dark:text-blue-400">
+
+                @for(w of allWebsites; track w ){
+
+                <div class="flex flex-col gap-4 md:gap-1 md:flex-row items-center bg-secondary slideup rounded-md p-4 text-gray-50 border-b mb-5">
+                    <div class="basis-1/3">
+                        <img src="https://gamming-website-api.onrender.com/{{w?.logo_url?.small_media}}" alt="">
+                    </div>
+                    <div class="basis-1/2">
+                        <div class="inner_div ">
+                            <p class="font-semibold text-xl uppercase"><span class="text-primary">200% </span>Welcome
+                                Bonus up to <span  class="text-primary"> ₹100,000</span></p>
+                            <ul class="features mt-3">
+                                <li class="text-sm mb-1"><i class="fa-solid fa-circle-check text-primary mr-2 "></i>
+                                    Refreshingly Simple Mobile First Casino</li>
+                                <li class="text-sm mb-1"><i class="fa-solid fa-circle-check text-primary mr-2 "></i>
+                                    Tournaments & Prizes</li>
+                                <li class="text-sm mb-1"><i class="fa-solid fa-circle-check text-primary mr-2 "></i>
+                                    Weekly Live Casino Reload Bonus</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="basis-1/3 text-center">
+                        <a  href="{{w?.button_link}}" class="primary-btn px-10 py-3 text-sm uppercase font-semibold rounded-md bg-button ">Visit
+                            Website</a>
+                        <button type="button" class="focus:text-blue-500  text-blue-500 flex items-center justify-center gap-3 bg-secondary focus:text-blue-500 w-full py-5 font-medium rtl:text-right" data-accordion-target="#accordion-flush-body-"  aria-expanded="false" aria-controls="accordion-flush-body">
+                            <span>Get Demo ID</span>
+                            <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M9 5 5 1 1 5" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- first -->
+                <div id="accordion-flush-body-{{w?.id}}" class="hidden bg-gray-200 mt-3 p-5 rounded-md" aria-labelledby="accordion-flush-heading">
+                    <div class="inner_div">
+                        <div class="flex justify-between">
+                            <div class="basis-1/2">
+                                <h4 class="text-2xl uppercase font-bold mb-1">Rajabets Casino Bonus   <a class="text-blue-500 font-semibold " href="http://localhost:4200/websites"><i class="fa-solid fa-square-arrow-up-right animate-bounce w-6 h-6"></i></a></h4>
+                       
+                        <p class="mb-2 text-gray-800 dark:text-gray-500 mt-3">Bovada is one of the top places to gamble online, especially if you’re looking for an all-in-one site. The comprehensive sportsbook has a fantastic bet builder and hundreds of prop bets each day.</p>
+
+                            <p class="mb-2 text-gray-800 dark:text-gray-500">The site also offers a wide range of casino games, including Hot Drop Jackpots. At Bovada’s virtual poker room, players will find cash games and tournaments, including the Monthly Milly that has a $1 million prize pool. All of this, and Bovada is also one of the most reputable online gambling sites.</p>
+
+                            </div>
+
+                            <div class="basis-1/3 flex justify-end">
+                                <div class="inner_div_demo text-center p-5 gap-1 flex rounded-md bg-secondary text-gray-50 w-50 item-center">
+                                    <div class="mb-3 title text-lg font-bold uppercase">👑 Golden Exch 👑</div>
+                                    <p>USER 🆔: gejitodemo</p>
+                                    <p>PASSWORD: Abcd12345</p>
+                                    <p> Minimum ID/ Bet : 100</p>
+                                    <a href="#" class="uppercase mt-3 p-2 rounded-sm bg-button text-gray-900 font-semibold font-medium text-sm">Login Demo</a>
+                                    <!-- <button class="">Login Demo</button> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+            
+            </div>
+
+
+        </div>
+
+
+        
+            <div class="gs_faw p-10 ">
+                <h2 class="text-secondary text-center text-2xl font-bold uppercase"><span class="text-primary">FAQs
+                    </span>of Max Sports</h2>
+    
+                <div id="accordion-flush-2" data-accordion="collapse"
+                    data-active-classes="bg-transperent dark:bg-gray-900 text-gray-50 dark:text-white"
+                    data-inactive-classes="text-gray-500 dark:text-gray-400">
+                    <h2 id="accordion-flush-heading-11">
+                        <button type="button"
+                            class="text-lg flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-600 dark:border-gray-700 dark:text-gray-400 gap-3"
+                            data-accordion-target="#accordion-flush-body-11" aria-expanded="true"
+                            aria-controls="accordion-flush-body-11">
+                            <span>1. What is Max Sports Book?</span>
+                            <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 5 5 1 1 5" />
+                            </svg>
+                        </button>
+                    </h2>
+                    <div id="accordion-flush-body-11" class="hidden" aria-labelledby="accordion-flush-heading-11">
+                        <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+                            <p class="mb-2 text-gray-300 dark:text-gray-400">Max Sports Book is India’s leading gaming and
+                                sports platform, offering players the best solutions for gaming, live betting, and fast
+                                transactions.
+                            </p>
+                        </div>
+                    </div>
+                    <h2 id="accordion-flush-heading-12">
+                        <button type="button"
+                            class="text-lg flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-600 dark:border-gray-700 dark:text-gray-400 gap-3"
+                            data-accordion-target="#accordion-flush-body-12" aria-expanded="false"
+                            aria-controls="accordion-flush-body-12">
+                            <span>2. How do I deposit money on Max Sports Book?</span>
+                            <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 5 5 1 1 5" />
+                            </svg>
+                        </button>
+                    </h2>
+                    <div id="accordion-flush-body-12" class="hidden" aria-labelledby="accordion-flush-heading-12">
+                        <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+                            <p class="mb-2 text-gray-300 dark:text-gray-400">Depositing money is simple! Contact our team on
+                                WhatsApp or through the app, and enjoy instant deposits with secure payment options.
+                            </p>
+                        </div>
+                    </div>
+                    <h2 id="accordion-flush-heading-13">
+                        <button type="button"
+                            class="text-lg flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-600 dark:border-gray-700 dark:text-gray-400 gap-3"
+                            data-accordion-target="#accordion-flush-body-13" aria-expanded="false"
+                            aria-controls="accordion-flush-body-13">
+                            <span>3. How fast are withdrawals on Max Sports Book?</span>
+                            <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 5 5 1 1 5" />
+                            </svg>
+                        </button>
+                    </h2>
+                    <div id="accordion-flush-body-13" class="hidden" aria-labelledby="accordion-flush-heading-13">
+                        <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+                            <p class="mb-2 text-gray-300 dark:text-gray-400">Withdrawals are processed instantly, ensuring
+                                you get your winnings as quickly as possible, with no delays.</p>
+    
+                        </div>
+                    </div>
+    
+                    <h2 id="accordion-flush-heading-14">
+                        <button type="button"
+                            class="text-lg flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-600 dark:border-gray-700 dark:text-gray-400 gap-3"
+                            data-accordion-target="#accordion-flush-body-14" aria-expanded="false"
+                            aria-controls="accordion-flush-body-14">
+                            <span>4. Is Max Sports Book secure and reliable?</span>
+                            <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 5 5 1 1 5" />
+                            </svg>
+                        </button>
+                    </h2>
+                    <div id="accordion-flush-body-14" class="hidden" aria-labelledby="accordion-flush-heading-14">
+                        <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+                            <p class="mb-2 text-gray-300 dark:text-gray-400">Absolutely! Max Sports Book uses advanced
+                                technology to ensure your data and transactions are safe and secure.
+                            </p>
+    
+                        </div>
+                    </div>
+    
+                    <h2 id="accordion-flush-heading-15">
+                        <button type="button"
+                            class="text-lg flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-600 dark:border-gray-700 dark:text-gray-400 gap-3"
+                            data-accordion-target="#accordion-flush-body-15" aria-expanded="false"
+                            aria-controls="accordion-flush-body-15">
+                            <span>5. What games and sports can I bet on?</span>
+                            <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 5 5 1 1 5" />
+                            </svg>
+                        </button>
+                    </h2>
+                    <div id="accordion-flush-body-15" class="hidden" aria-labelledby="accordion-flush-heading-15">
+                        <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+                            <p class="mb-2 text-gray-300 dark:text-gray-400">You can bet on a wide range of sports and games, including cricket, football, basketball, and more. Explore live events for a thrilling experience!
+    
+                            </p>
+    
+                        </div>
+                    </div>
+    
+    
+                    <h2 id="accordion-flush-heading-16">
+                        <button type="button"
+                            class="text-lg flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-600 dark:border-gray-700 dark:text-gray-400 gap-3"
+                            data-accordion-target="#accordion-flush-body-16" aria-expanded="false"
+                            aria-controls="accordion-flush-body-16">
+                            <span>6. How can I get support if I face any issues?</span>
+                            <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 5 5 1 1 5" />
+                            </svg>
+                        </button>
+                    </h2>
+                    <div id="accordion-flush-body-16" class="hidden" aria-labelledby="accordion-flush-heading-16">
+                        <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+                            <p class="mb-2 text-gray-300 dark:text-gray-400">Our customer support team is available 24/7 on WhatsApp and Telegram to assist you with any queries or issues.
+                            </p>
+    
+                        </div>
+                    </div>
+    
+    
+                </div>
+              </div>
+  
+        </div>
+</section>

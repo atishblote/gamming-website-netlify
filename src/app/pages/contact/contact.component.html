@@ -1,0 +1,120 @@
+<div class="max-w-screen-xl items-center justify-between mx-auto p-4">
+    <app-hero-section [title]="title"></app-hero-section>
+
+
+    <div class="gs_contact_us  bg-secondary p-4 md:p-8 rounded-lg mt-10">
+        <div class="flex flex-col  md:flex-row gap-8">
+            <div class="basis-1/2">
+                <div class="section-title text-left mb-5">
+                    <h2 class="text-secondary text-xl md:text-2xl font-bold uppercase"><span><span class="text-primary"> Contact
+                                Us</span> & Meet Our Team !</span> </h2>
+                </div>
+
+
+                <!-- form -->
+                <div class="rounded-lg" style="background-color: #181c23;">
+                    <div class=" p-4 mx-auto max-w-2xl">
+                        <form action="#">
+                            <div class="grid gap-4 sm:grid-cols-2 sm:gap-6">
+                                <div class="sm:col-span-2">
+                                    <label for="name"
+                                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Full
+                                        Name</label>
+                                    <input type="text" name="name" id="name"
+                                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-amber-400 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-amber-400 dark:focus:border-primary-500"
+                                        placeholder="Jhon B Joshep" required="">
+                                </div>
+                                <div class="w-full">
+                                    <label for="brand"
+                                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Email</label>
+                                    <input type="email" name="brand" id="brand"
+                                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-amber-400 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-amber-400 dark:focus:border-primary-500"
+                                        placeholder="user&#64;gmail.com" required="">
+                                </div>
+                                <div class="w-full">
+                                    <label for="price"
+                                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Contact</label>
+                                    <input type="number" name="price" id="price"
+                                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-amber-400 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-amber-400 dark:focus:border-primary-500"
+                                        placeholder="+91 " required="">
+                                </div>
+                                <div>
+                                    <label for="category"
+                                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Subject</label>
+                                    <select id="category"
+                                        class="bg-gray-950 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-amber-400 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-amber-400 dark:focus:border-primary-500">
+                                        <option selected=""></option>
+                                        <option value="TV">TV/Monitors</option>
+                                        <option value="PC">PC</option>
+                                        <option value="GA">Gaming/Console</option>
+                                        <option value="PH">Phones</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label for="item-weight"
+                                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Contry Code
+                                        </label>
+                                    <input type="text" name="item-weight" id="item-weight"
+                                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-amber-400 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-amber-400 dark:focus:border-primary-500"
+                                        placeholder="Ex. IN" required="">
+                                </div>
+                                <div class="sm:col-span-2">
+                                    <label for="description"
+                                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Message</label>
+                                    <textarea id="description" rows="8"
+                                        class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-amber-400 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-amber-400 dark:focus:border-primary-500"
+                                        placeholder="Your description here"></textarea>
+                                </div>
+                            </div>
+                            <button type="submit"
+                                class="primary-btn px-5 py-2 text-xs uppercase font-semibold rounded-md bg-button w-full mt-5">
+                               Submit Enquiry
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="basis-1/2 address">
+                <p class="text-gray-300 text-sm mb-3">Cursus placerat libero Velit scelerisque mollis. Sollicitudin. Fames commodo lectus venenatis porta. Vulputate neque placerat libero massa elit sapien adipiscing. Litora luctus odio dolor sed bibendum lobortis donec turpis orci cum elit etiam</p>
+                <div class="flex  flex-row gap-5 my-1 md:my-5 rounded-md p-3 md:p-5">
+                    <div class="basis-1/12 md:basis-1/12 justify-end flex">
+                        <img class="grey_scale" src="/assets/img/contact-map-icon1.svg" alt="">
+                    </div>
+                    <div class="basis-10/12 md:basis-11/12">
+                        <h3 class=" font-bold text-md md:text-xl mb-2 text-gray-50 ">ADDRESS:</h3>
+                        <p class="text-gray-200 text-sm"><a href="#">Floor 2, 4 Naval St, Ancoats, Manchester M4 6EW, United Kingdom</a></p>
+                    </div>
+                </div>
+
+                <!-- two -->
+                <div class="flex  flex-row gap-5 my-1 md:my-5 rounded-md p-3 md:p-5">
+                    <div class="basis-1/12 md:basis-1/12 justify-end flex">
+                        <img class="grey_scale" src="/assets/img/contact-envelope-icon1.svg" alt="">
+                    </div>
+                    <div class="basis-10/12 md:basis-11/12">
+                        <h3 class=" font-bold text-md md:text-xl mb-2 text-gray-50 ">OFFICE EMAIL:</h3>
+                        <p class="text-gray-200 text-md"><a href="#">Office Mail: info&#64;bame.com
+                            </a> <br>
+                            <a href="#">CEO Mail: info&#64;bameceo.com</a>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- three -->
+                <div class="flex  flex-row gap-5 my-1 md:my-5 rounded-md p-3 md:p-5">
+                    <div class="basis-1/12 md:basis-1/12 justify-end flex">
+                        <img class="grey_scale" src="/assets/img/contact-phone-icon1.svg" alt="">
+                    </div>
+                    <div class="basis-10/12 md:basis-11/12">
+                        <h3 class=" font-bold text-md md:text-xl mb-2 text-gray-50 ">OFFICE NUMBER:</h3>
+                        <p class="text-gray-200 text-md"><a href="#">Mobile: +163 6598 1254
+                            </a> <br><span>Fax: +163 6985 2365 </span></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
