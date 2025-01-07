@@ -141,26 +141,14 @@
       object-fit: cover;
     }
 
-    .social .odd {
+    
+    .social .odd , .social .even {
       display: flex;
       width: 100%;
-      background: #363d4a;
-      padding: 39%;
+      background: #14161a;
+      padding: 22%;
     }
-    .social .odd:hover {
-      background: #f3d72d;
-      color: black;
-    }
-    .social .even {
-      display: flex;
-      width: 100%;
-      background: #a0a7ab;
-      padding: 40%;
-    }
-    .social .even:hover {
-      background: #f3d72d;
-      color: black;
-    }
+
     .social i {
       color: white;
       font-size: 19px;
