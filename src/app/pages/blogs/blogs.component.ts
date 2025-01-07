@@ -20,7 +20,7 @@ export class BlogsComponent implements OnInit{
       this.global.getWithToken('blog').subscribe({
         next:(res:any)=>{
           this.allBlogs = res.data
-          console.log(res)
+          // console.log(res)
         },
         error: (error:any)=>{
           console.log(error.error)

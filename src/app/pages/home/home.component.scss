@@ -247,8 +247,17 @@
 }
 
 @media screen and (max-width: 768px) {
+  .inner_ion {
+    
+    margin-top: 11px;
+   
+}
   .swiper img {
     height: 230px !important;
+  }
+  .best-selling img{
+    height: 108px !important;
+    object-fit: cover !important;
   }
   .product_d_flex{
     align-items: start ;

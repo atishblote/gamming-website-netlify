@@ -8,4 +8,11 @@
     .gs_faw button{
         text-align: left;
     }
+
+    @media screen and (max-width: 768px) {
+        .gs_list_websites img {
+            height: 120px;
+            object-fit: cover;
+        }
+    }
 }

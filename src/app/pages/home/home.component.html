@@ -1,6 +1,6 @@
 <section class="gs_hero">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <div class="swiper swiper_banner">
+        <div class="swiper swiper_banner hidden md:block ">
             <div class="swiper-wrapper">
                
                 <div class="swiper-slide">
@@ -38,6 +38,14 @@
             <div class="swiper-pagination"></div>
 
         </div>
+
+        <div class="block md:hidden">
+            <video autoplay muted loop playsinline>
+                <source src="/assets/img/GIF.webm" type="video/webm">
+                Your browser does not support the video tag.
+              </video>
+              
+        </div>
     </div>
 </section>
 
@@ -48,7 +56,7 @@
         <div class="flex flex-col md:flex-row w-full gap-0 md:gap-6">
             <div class="basis-full md:basis-1/4">
                 <div class="inner_ion animate-slide-up px-7 py-4">
-                    <img class="slidleft" src="https://res.cloudinary.com/dnagrjvtq/image/upload/v1736148353/Casino_1_jire7b.png"
+                    <img class="slidleft" src="https://res.cloudinary.com/dnagrjvtq/image/upload/v1736238832/Casino_2__11zon_gbxkv8.png"
                         alt="">
                     <div class="right_side">
                         <div class="name text-secondary font-bold text-xl uppercase">Casino</div>
@@ -62,7 +70,7 @@
             </div>
             <div class="basis-1/4 md:basis-1/4">
                 <div class="inner_ion animate-slide-up px-7 py-4">
-                    <img class="slidleft" src="https://res.cloudinary.com/dnagrjvtq/image/upload/v1736148353/Aviator_1_wix3do.png"
+                    <img class="slidleft" src="https://res.cloudinary.com/dnagrjvtq/image/upload/v1736238832/Aviator_2__11zon_n1etyk.png"
                         alt="">
                     <div class="right_side">
                         <div class="name text-secondary font-bold text-xl uppercase">Sport</div>
@@ -77,7 +85,7 @@
             </div>
             <div class="basis-1/4 md:basis-1/1">
                 <div class="inner_ion  animate-slide-up px-7 py-4">
-                    <img class="slidleft" src="https://res.cloudinary.com/dnagrjvtq/image/upload/v1736148352/Live-casino_gw6lgn.png"
+                    <img class="slidleft" src="https://res.cloudinary.com/dnagrjvtq/image/upload/v1736238833/Live-casino_1__11zon_trtudc.png"
                         alt="">
                     <div class="right_side">
 
@@ -93,7 +101,7 @@
 
             <div class="basis-1/4 md:basis-1/1">
                 <div class="inner_ion animate-slide-up px-7 py-4">
-                    <img class="slidleft" src="https://res.cloudinary.com/dnagrjvtq/image/upload/v1736148352/Sport_1_j4tblc.png"
+                    <img class="slidleft" src="https://res.cloudinary.com/dnagrjvtq/image/upload/v1736238831/Sport_3__11zon_wlqqgs.png"
                         alt="">
                     <div class="right_side">
 
@@ -135,7 +143,7 @@
                         <div class="basis-1/3 flex  gap-2" style="align-items: center;">
                             <div class="slideup flex flex-col md:flex-row gap-3 product_d_flex">
                                 <div class="basis-full md:basis-1/2 image_div ">
-                                    <img class="rounded-md" src="https://gamming-website-api.onrender.com/{{w?.logo_url?.large_media}}" alt="">
+                                    <img class="rounded-md" src="{{w?.logo_url?.large_media}}" alt="">
                                 </div>
                                 <div class="basis-full md:basis-1/2 right_side_div">
                                     <div class="product-title text-gray-50 text-md md:text-lg  uppercase font-bold">
@@ -173,129 +181,15 @@
                 </div>
 
                 <!-- live match -->
-                <div class="live-match-div p-3 rounded-md slideup" style="background-color: #f8ffe4;">
-                    <button class="secondary-btn px-5 py-2 text-xs uppercase font-semibold rounded-md "
-                        style="color: greenyellow">Now Playing</button>
-                    <div class="inner-div">
-                        <div class="match-title text-black text-lg mb-5 text-center font-bold">Australia vs
-                            India, 4th Test </div>
-                        <div class="flex flex-row justify-center">
-                            <div class="basis-1/3 text_center"><img src="/assets/img/team_flag1.jpg" alt=""></div>
-                            <div class="basis-1/4 text_center"><span class="vs">VS</span></div>
-                            <div class="basis-1/3 text_center"><img src="/assets/img/team_flag2.jpg" alt=""></div>
-                        </div>
-                        <div class="match-info ">
-                            <p class="mb-1 mt-5 text-center text-black font-semibold text-sm"> Melbourne Cricket Ground,
-                                Melbourne
-                            </p>
-                            <p class="text-center text-black font-semibold text-xs">Dec 26-Dec 30, 10:30 AM LOCAL</p>
-                        </div>
-                        <div class="text-center mt-3">
-                            <button
-                                class="primary-btn px-5 py-2 text-xs uppercase font-semibold rounded-md bg-button">Match
-                                Details <i class="fa-solid fa-caret-right"></i></button>
-                        </div>
+                <div class="live-match-div  rounded-md slideup flex flex-col md:flex-row gap-4">
+                @for(m of allMatches; track m){
+                    <a href="{{m?.link}}" class="basis-1/2 slideup">
+                        <img class="w-full rounded-md" src="{{m?.featured_id?.media_media}}" alt="">
 
-                    </div>
+                    </a>
+                }
                 </div>
-
-                <!-- one -->
-                <div class="live-match-div rounded-md slideup bg-secondary mt-4 py-5">
-
-                    <div class="inner-div upcomming">
-                        <!-- <div class="match-title text-secondary text-sm mb-1 text-center font-semibold">Australia vs
-                            India, 4th Test </div> -->
-                        <div class="flex flex-row justify-between px-1 md:px-5" style="align-items: center;">
-                            <div class="basis-1/3 flex flex-col md:flex-row justify-start gap-2"
-                                style="align-items: center;"><img src="/assets/img/team_flag1.jpg" alt=""> <span
-                                    class="text-sm md:text-lg uppercase font-semibold text-gray-50">India</span> </div>
-                            <div class="basis-1/4">
-                                <div class="text-center">
-                                    <span class="vs_up text-gray-50 font-bold">VS</span>
-                                    <div class="match-info text-center mt-3">
-
-                                        <p class="text-center text-gray-200 text-xs mb-2">Dec 26-Dec 30, 10:30 AM LOCAL
-                                        </p>
-                                        <span class="primary-btn px-5 py-2 text-sm uppercase font-semibold rounded-md ">
-                                            <i class="fa-regular fa-clock"></i> 01:30 </span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="basis-1/3 flex flex-col-reverse md:flex-row justify-end  gap-2"
-                                style="align-items: center;"><span
-                                    class="text-sm md:text-lg uppercase font-semibold text-gray-50">Australia</span>
-                                <img src="/assets/img/team_flag2.jpg" alt=""></div>
-                        </div>
-
-
-                    </div>
-                </div>
-
-                <!-- two -->
-                <div class="live-match-div rounded-md slideup bg-secondary mt-4 py-5">
-
-                    <div class="inner-div upcomming">
-                        <!-- <div class="match-title text-secondary text-sm mb-1 text-center font-semibold">Australia vs
-                            India, 4th Test </div> -->
-                        <div class="flex flex-row justify-between px-1 md:px-5" style="align-items: center;">
-                            <div class="basis-1/3 flex flex-col md:flex-row justify-start gap-2"
-                                style="align-items: center;"><img src="/assets/img/team_flag1.jpg" alt=""> <span
-                                    class="text-sm md:text-lg uppercase font-semibold text-gray-50">Shri lanka</span>
-                            </div>
-                            <div class="basis-1/4">
-                                <div class="text-center">
-                                    <span class="vs_up text-gray-50 font-bold">VS</span>
-                                    <div class="match-info text-center mt-3">
-
-                                        <p class="text-center text-gray-200 text-xs mb-2">Dec 26-Dec 30, 10:30 AM LOCAL
-                                        </p>
-                                        <span class="primary-btn px-5 py-2 text-sm uppercase font-semibold rounded-md ">
-                                            <i class="fa-regular fa-clock"></i> 01:30 </span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="basis-1/3 flex flex-col-reverse md:flex-row justify-end  gap-2"
-                                style="align-items: center;"><span
-                                    class="text-sm md:text-lg uppercase font-semibold text-gray-50">Bangladesh</span>
-                                <img src="/assets/img/team_flag2.jpg" alt=""></div>
-                        </div>
-
-
-                    </div>
-                </div>
-
-                <!-- three -->
-                <div class="live-match-div rounded-md slideup bg-secondary mt-4 py-5">
-
-                    <div class="inner-div upcomming">
-                        <!-- <div class="match-title text-secondary text-sm mb-1 text-center font-semibold">Australia vs
-                            India, 4th Test </div> -->
-                        <div class="flex flex-row justify-between px-1 md:px-5" style="align-items: center;">
-                            <div class="basis-1/3 flex flex-col md:flex-row justify-start gap-2"
-                                style="align-items: center;"><img src="/assets/img/team_flag1.jpg" alt=""> <span
-                                    class="text-sm md:text-lg uppercase font-semibold text-gray-50">India</span> </div>
-                            <div class="basis-1/4">
-                                <div class="text-center">
-                                    <span class="vs_up text-gray-50 font-bold">VS</span>
-                                    <div class="match-info text-center mt-3">
-
-                                        <p class="text-center text-gray-200 text-xs mb-2">Dec 26-Dec 30, 10:30 AM LOCAL
-                                        </p>
-                                        <span class="primary-btn px-5 py-2 text-sm uppercase font-semibold rounded-md ">
-                                            <i class="fa-regular fa-clock"></i> 01:30 </span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="basis-1/3 flex flex-col-reverse md:flex-row justify-end  gap-2"
-                                style="align-items: center;"><span
-                                    class="text-sm md:text-lg uppercase font-semibold text-gray-50">Australia</span>
-                                <img src="/assets/img/team_flag2.jpg" alt=""></div>
-                        </div>
-
-
-                    </div>
-                </div>
-
+                
                    <!-- latest  post -->
                    <div class="section-title mb-5 mt-8">
                     <h2 class="text-secondary title text-2xl font-bold uppercase"><span
@@ -309,7 +203,7 @@
                             <div class="inner-post slideup">
                                 <div class="blog-size">
                                     <img  class="feature_img image-glow"
-                                    src="https://gamming-website-api.onrender.com/{{b?.featured_id?.media_media}}"
+                                    src="{{b?.featured_id?.media_media}}"
                                         alt="">
                                 </div>
 
@@ -462,12 +356,16 @@
                     </div>
                     <div class="recent_screenshot">
                         <div class="flex flex-col gap-2 p-4">
+                            @for(p of allPromotions; track p){
                             <div class="basis-1/2">
-                                <div  routerLink="websites" class="link"><img src="https://res.cloudinary.com/dnagrjvtq/image/upload/v1736167726/633W-x-640H_1_11zon_n0ki63.jpg" class="rounded-md slideupNotS" alt=""></div>
+                                <div  class="link">
+                                    <a href="{{p?.link}}">
+                                        <img src="{{p?.featured_id?.media_media}}" class="rounded-md slideupNotS" alt="">
+                                    </a>
+                                </div>
                             </div>
-                            <div class="basis-1/2">
-                                <div routerLink="websites" class="link"><img src="https://res.cloudinary.com/dnagrjvtq/image/upload/v1736167726/633W-x-640H_3_11zon_dlq6dl.jpg" class="rounded-md slideupNotS" alt=""></div>
-                            </div>
+                            }
+                            
                         </div>
 
                        
@@ -498,7 +396,7 @@
                         @for(w of allWebsites; track w){
                         <div class="slideupNotS product_d_flex d-flex p-4">
                             <div class="basis-1/2 image_div border border-amber-400 rounded-md">
-                                <img class="rounded-md" src="https://gamming-website-api.onrender.com/{{w?.logo_url?.large_media}}" alt="">
+                                <img class="rounded-md" src="{{w?.logo_url?.large_media}}" alt="">
                             </div>
                             <div class="basis-1/2 right_side_div">
                                 <div class="product-title text-gray-50 text-md md:text-lg  uppercase font-bold">

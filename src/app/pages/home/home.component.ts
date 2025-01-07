@@ -22,6 +22,8 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 export class HomeComponent implements OnInit, AfterViewInit {
   allWebsites: any;
   allBlogs: any;
+  allPromotions: any;
+  allMatches: any;
 
   allData: any;
   constructor(
@@ -33,12 +35,16 @@ export class HomeComponent implements OnInit, AfterViewInit {
     // Define Observables
     const request1 = this.global.getWithToken('all-websites');
     const request2 = this.global.getWithToken('blog');
+    const request3 = this.global.getWithToken('all-promotions');
+    const request4 = this.global.getWithToken('all-matches');
 
     // Combine Observables with forkJoin
-    forkJoin([request1, request2]).subscribe({
-      next: ([res1, res2]: any) => {
+    forkJoin([request1, request2 , request3 , request4]).subscribe({
+      next: ([res1, res2 , res3, res4]: any) => {
         this.allWebsites = res1.data;
         this.allBlogs = res2.data;
+        this.allPromotions = res3.data;
+        this.allMatches = res4.data;
       },
       error: (err) => console.error('Error:', err),
     });

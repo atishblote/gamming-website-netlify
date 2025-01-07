@@ -173,6 +173,14 @@ footer{
 .gs_faq button {
     text-align: left;
   }
+
+.above_footer{
+    img{
+        height: 402px ;
+        width: 100%;
+        object-fit: cover;
+    }
+}
 @media screen and (max-width:768px) {
     .sticky_bottom_button {
         display: block;
@@ -183,5 +191,12 @@ footer{
     }
     p{
             font-size: 0.9rem;
+    }
+    .above_footer{
+        img{
+            height: auto ;
+            width: 100%;
+            object-fit: contain;
+        }
     }
 }
