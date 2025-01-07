@@ -181,7 +181,15 @@ footer{
         object-fit: cover;
     }
 }
+.payment_link img {
+    width: auto;
+    height: 39px;
+}
 @media screen and (max-width:768px) {
+    .payment_link img {
+        width: 76px;
+        height: 29px;
+    }
     .sticky_bottom_button {
         display: block;
     }

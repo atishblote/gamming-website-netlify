@@ -1,5 +1,5 @@
 <section class="gs_hero">
-    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto md:p-4">
         <div class="swiper swiper_banner hidden md:block ">
             <div class="swiper-wrapper">
                
@@ -124,10 +124,16 @@
     <div class="max-w-screen-xl items-center justify-between mx-auto p-4">
 
 
-        <div class="d_f_latest_post pt-5">
+        <div class="d_f_latest_post md:pt-5">
 
             <div class="post-sinner">
 
+                <!-- flyer -->
+                <div class="match-flyer pb-10 md:hidden block">
+                    <a href="https://wa.me/+919090575704?text=Hi">
+                        <img class="slideupNotS rounded-xl border border-amber-400 border-2" src="https://res.cloudinary.com/dnagrjvtq/image/upload/v1736240780/footer-right_wlep4h.webp" alt="">
+                      </a>
+                </div>
                 <!-- best selling -->
                 <div class="best-selling">
                     <div class="section-title mb-5">
@@ -156,7 +162,7 @@
                                         <i class="fa-solid fa-star"></i>
                                         <i class="fa-regular fa-star"></i>
                                     </div>
-                                    <div class="price  text-gray-50 text-md md:text-lg my-4 uppercase font-bold">₹{{w?.price}}
+                                    <div class="price  text-gray-50 text-md md:text-lg my-4 uppercase font-bold"> Min ₹{{w?.price}}
                                     </div>
                                     <button routerLink="{{w?.slug}}"
                                         class="primary-btn px-5 py-2 text-xs uppercase font-semibold rounded-md bg-button">Buy Now</button>
@@ -260,34 +266,18 @@
                 <div class="bg-secondary rounded-md mt-5">
                     <div class="section-title mb-5">
                         <h5 class="pt-5 pl-3 text-secondary title text-lg font-bold uppercase"><span
-                                class="before"></span><span><span class="text-primary">Latest</span> Video</span> <span
+                                class="before"></span><span><span class="text-primary">What’s</span> Max Sports?</span> <span
                                 class="after"></span></h5>
                     </div>
 
                     <div class="latest_video">
-                        <div class="flex gap-5 pb-4">
-                            <div class="basis-1/2">
-                                <a href="#"><img src="/assets/img/vXy8UBazlO8-MQ.jpg" class="rounded-md" alt=""><i
-                                        class="fa-brands fa-youtube"></i></a>
-                            </div>
-                            <div class="basis-1/2">
-                                <a href="#"><img src="/assets/img/vXy8UBazlO8-MQ.jpg" class="rounded-md" alt=""><i
-                                        class="fa-brands fa-youtube"></i></a>
-                            </div>
+                        <div class=" p-2">
+                                <a href="https://youtu.be/oakGzhq0yVQ?si=DHXrh2dFEyDBuk2p" target="_blank"><img src="/assets/img/video-thumb.png" class="rounded-md w-full" alt=""><i
+                                        class="fa-brands fa-youtube animate-ping"></i></a>
+                            
                         </div>
 
-                        <!-- two -->
-                        <div class="flex gap-5 pb-4">
-                            <div class="basis-1/2">
-                                <a href="#"><img src="/assets/img/vXy8UBazlO8-MQ.jpg" class="rounded-md" alt=""><i
-                                        class="fa-brands fa-youtube"></i></a>
-                            </div>
-                            <div class="basis-1/2">
-                                <a href="#"><img src="/assets/img/vXy8UBazlO8-MQ.jpg" class="rounded-md" alt=""><i
-                                        class="fa-brands fa-youtube"></i></a>
-                            </div>
-                        </div>
-
+                      
 
 
                     </div>
@@ -409,7 +399,7 @@
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-regular fa-star"></i>
                                 </div>
-                                <div class="price  text-gray-50 text-md my-4 uppercase font-bold">₹{{w?.price}}</div>
+                                <div class="price  text-gray-50 text-md my-4 uppercase font-bold">Min ₹{{w?.price}}</div>
                             </div>
                         </div>
 
@@ -427,6 +417,54 @@
     </div>
 </section>
 
+
+<div class="why_choose_us" style="overflow: hidden;">
+    <div class="max-w-screen-xl mx-auto p-4">
+        <div class="section-title mb-5 mt-10">
+            <h2 class="text-secondary title text-2xl font-bold uppercase"><span
+                    class="before"></span><span>Why Choose<span class="text-primary">Max Spotrs</span> </span> <span
+                    class="after"></span></h2>
+        </div>
+        <div class="flex flex-col md:flex-row gap-10">
+            <div class="basis-1/2 md:block hidden">
+                <img src="/assets/img/about-us-800x700_11zon.jpg" class="w-full" alt="">
+            </div>
+            <div class="basis-1/2">
+                <div class="grid grid-cols-2 md:gap-8 gap-3">
+                    <div class="icon_area slidleft bg-secondary p-5 rounded-xl">
+                        <img src="/assets/img/trophy.png" width="84" class="rounded-md" alt="">
+                        <div class="inner_area">
+                            <h6 class="font-semibold text-xl mt-8 text-primary">Real-Time Sports Betting</h6>
+                        </div>
+                    </div>
+
+                    <div class="icon_area slidleft bg-secondary p-5 rounded-xl">
+                        <img src="/assets/img/trophy.png" width="84" alt="">
+                        <div class="inner_area">
+                            <h6 class="font-semibold text-xl mt-8 text-primary">Instant Withdrawal & Deposit</h6>
+                        </div>
+                    </div>
+
+                    <div class="icon_area slidleft bg-secondary p-5 rounded-xl">
+                        <img src="/assets/img/trophy.png" width="84" alt="">
+                        <div class="inner_area">
+                            <h6 class="font-semibold text-xl mt-8 text-primary">Trusted & Secure
+                                Platform</h6>
+                        </div>
+                    </div>
+
+                    <div class="icon_area slidleft bg-secondary p-5 rounded-xl">
+                        <img src="/assets/img/trophy.png" width="84" alt="">
+                        <div class="inner_area">
+                            <h6 class="font-semibold text-xl mt-8 text-primary">24/7 Customer Support</h6>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <section class="gs_faq">
     <div class="max-w-screen-xl mx-auto p-4">
