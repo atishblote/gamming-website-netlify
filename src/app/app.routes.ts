@@ -11,6 +11,6 @@ export const routes: Routes = [
     {path: 'about-us', component:AboutComponent},
     {path: 'contact-us', component:ContactComponent},
     {path: 'blogs', component:BlogsComponent},
-    {path: 'blog/:australia-v-india-second-test-expert-predictions-and-analysis', component:SingleBlogComponent},
+    {path: 'blog/:slug', component:SingleBlogComponent},
     {path: 'websites', component:WebsitesComponent},
 ];
