@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
 @Component({
@@ -8,6 +8,12 @@ import { RouterLink } from '@angular/router';
   templateUrl: './single-blog.component.html',
   styleUrl: './single-blog.component.scss'
 })
-export class SingleBlogComponent {
+export class SingleBlogComponent implements OnInit{
+
+  slug:any
+  singleBlog:any
+  ngOnInit(): void {
+    
+  }
 
 }

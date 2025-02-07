@@ -1,0 +1,30 @@
+.gs_contact_us label {
+  color: rgb(200, 200, 200);
+}
+.gs_contact_us input, .gs_contact_us select, .gs_contact_us textarea {
+  padding: 9.5px 10px;
+  font-size: 1em;
+  font-weight: 400;
+  color: #fff;
+  background-color: rgb(41, 46, 56);
+  border: 1px solid #313947;
+  border-radius: 4px;
+  transition: 0.15s border-color;
+  box-shadow: inset 6px 2px 5px rgba(24, 28, 35, 0.6117647059);
+}
+.gs_contact_us ::-moz-placeholder {
+  font-size: 14px;
+}
+.gs_contact_us ::placeholder {
+  font-size: 14px;
+}
+.gs_contact_us .d_flex {
+  display: flex;
+}
+.gs_contact_us .d_flex:hover a {
+  color: #e4b528;
+}
+.gs_contact_us .address img {
+  width: 50px;
+  filter: hue-rotate(270deg);
+}/*# sourceMappingURL=contact.component.css.map */

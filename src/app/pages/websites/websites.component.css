@@ -1,0 +1,15 @@
+.gs_websites .inner_div_demo {
+  flex-direction: column;
+  justify-content: center;
+  min-width: 312px;
+}
+.gs_websites .gs_faw button {
+  text-align: left;
+}
+@media screen and (max-width: 768px) {
+  .gs_websites .gs_list_websites img {
+    height: 120px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}/*# sourceMappingURL=websites.component.css.map */
